@@ -8,8 +8,8 @@
 
 /* Background Colors */
 :root {
-    --bg-header: #add8e6;
-    --bg-navbar: #d9a521;
+    --bg-header: #3161e0;
+    --bg-navbar: #3161e0;
     --bg-main-top: #00008b;
     --bg-jumbotron: #ee82ee;
     --bg-main-bottom-g: #d3d3d3;
@@ -62,33 +62,70 @@ header {
     align-items: center;
 }
 
+
+
+
+
 .navbar {
-    width: 80%;
-    height: 35px;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--bg-navbar);
-    padding: 10px;
-    border: 2px dashed black;
+    padding: 10px 20px;
+    color: white;
 }
 
+
+.list-link {
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px
+}
+
+.logo {
+
+
+    flex-grow: 0;
+
+}
+
+.login {
+
+    flex-grow: 0;
+    padding: 10px 10px;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+}
+
+
+
+li a {
+    color: white;
+
+}
+
+
 .header-links {
-    width: 60%;
-    border-left: 2px dashed black;
-    border-right: 2px dashed black;
+
+    justify-content: center;
     text-align: center;
+    flex-grow: 1;
+    color: white;
 }
 
 /* Main top */
 
-.main-top {
+.jumbotron {
     background-color: var(--bg-main-top);
     min-height: 450px;
     justify-content: center;
     align-items: center;
+
 }
 
-.jumbotron {
+.jumbotron-content {
     width: 40%;
     min-height: 350px;
     background-color: var(--bg-jumbotron);
